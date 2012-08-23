@@ -1,8 +1,4 @@
-/* Imports */ 
-	@import url("reset.css"); 
-	@import url("global-forms.css"); 
-	
-	 
+		 
 /* --------------------------- Global -----------------------------------------*/ 
 
 
@@ -10,7 +6,16 @@ img{
 	max-width: 100%;
 }
 
-
+#ballbox {
+	width: 25%;
+	float: right;
+	padding-right: 1em;
+	}
+h4{
+	text-align: left;
+	padding-left: 2em;
+	color: #fff;
+}
 /*----------------------------- Body ----------------------------------------- */ 
 
 body { 
@@ -18,6 +23,7 @@ body {
 	background-repeat: repeat-x; 
 	color: #000305; 
 	font-size: 87.5%;
+	max-width: 100%;
 
 
 
@@ -35,7 +41,7 @@ body {
 	.body {
 		clear: both; 
 		margin: 0 auto; 
-		width: 100%; /*800px*/
+		max-width: 100%; /*800px*/
 		} 
 	img.right figure.right {
 		float: right; 
@@ -92,13 +98,13 @@ body {
 		
 	} 
 	a img {
-		border: 0px; 
+		border: 0em; 
 		text-decoration: none;
 		} 
 	a:link, 
 	a:visited { 
 		color: #C74350; 
-		padding: 0 1px; 
+		padding: 0 .083em; 
 		text-decoration: underline; 
 		} 
 	a:hover, 
@@ -106,7 +112,7 @@ body {
 		background-color: #C74350; 
 		color: #fff; 
 		text-decoration: none; 
-		text-shadow: 1px 1px 1px #333; 
+		text-shadow: .083em .083em .083em #333; 
 		}  
 /* -------------------------------- Paragraphs -------------------------------------- */ 
 	p {
@@ -115,6 +121,7 @@ body {
 		} 
 	p:last-child {
 		margin-bottom: 0;
+		
 		}  
 	
 	strong, b {
@@ -127,11 +134,19 @@ body {
 /* ----------------------------------- Lists ---------------------------------------- */ 
 	ul { 
 		list-style: outside disc; 
-		margin: 1em 0 1.5em 1.5em; 
+		margin: 0em 0em 0em;
+		float: left;
+		
 		}  
+	li {
+		float: left;
+		
+		}	
 	ol { 
 		list-style: outside decimal; 
-		margin: 1em 0 1.5em 1.5em; 
+		margin: 1em 0 1.5em 1.5em;
+		
+		 
 		}  
 	dl {
 		margin: 0 0 1.5em 0;
@@ -203,7 +218,7 @@ body {
 	/* --------------- Double margin fix --------------- */ 
 	
 #posts-list footer {
-	left: -190px;
+	left: -15.833em;
 	} 
 /* --------------------- Positioning fix ----------------- */  
 /* ----Smaller width for Social block so it won't jump to next line ----- */ 
@@ -236,15 +251,15 @@ body {
 #banner nav { 
 	background: #000305; 
 	font-size: 1.143em; 
-	height: 40px; 
-	line-height: 30px; 
+	height: 2.5em; 
+	line-height: 2em; 
 	margin: 0 auto 2em auto; 
 	padding: 0; 
 	text-align: center; 
 	width: 100%;  /*800px;*/  
-	border-radius: 5px; 
-	-moz-border-radius: 5px; 
-	-webkit-border-radius: 5px; 
+	border-radius: .417em; 
+	-moz-border-radius: .417em; 
+	-webkit-border-radius: .417em; 
 	}  
 
 #banner nav ul {
@@ -263,8 +278,8 @@ body {
 #banner nav a:visited { 
 	color: #fff; 
 	display: inline-block; 
-	height: 30px; 
-	padding: 5px 1.5em; 
+	height: 2em; 
+	padding: .25em 1.5em; 
 	text-decoration: none; 
 	} 
 	
@@ -278,12 +293,12 @@ body {
 	}  
 	
 #banner nav li:first-child a { 
-	border-top-left-radius: 5px; 
-	-moz-border-radius-topleft: 5px; 
-	-webkit-border-top-left-radius: 5px;  
-	border-bottom-left-radius: 5px; 
-	-moz-border-radius-bottomleft: 5px; 
-	-webkit-border-bottom-left-radius: 5px; 
+	border-top-left-radius: .417em; 
+	-moz-border-radius-topleft: 417em; 
+	-webkit-border-top-left-radius: 417em;  
+	border-bottom-left-radius: .535em; 
+	-moz-border-radius-bottomleft: 417em; 
+	-webkit-border-bottom-left-radius: 417em; 
 	}
 	
 /* ------------------------------ Featured ------------------------------------- */ 
@@ -293,16 +308,17 @@ body {
 	background: #fff; 
 	margin-bottom: 2em; 
 	overflow: hidden; 
-	padding: 20px; 
+	padding: 1.667em; 
 	width: 90%; /*760px;*/  
-	border-radius: 10px; 
-	-moz-border-radius: 10px; 
-	-webkit-border-radius: 10px;
+	border-radius: .833em; 
+	-moz-border-radius: .833em; 
+	-webkit-border-radius: .833em;
+	
 	
 	}  
 	
 #featured figure { 
-	border: 2px solid #eee; 
+	border: .167em solid #eee; 
 	float: right; 
 	margin: 0.786em 2em 0 5em; 
 	width: 31%; /*248px;*/
@@ -316,6 +332,7 @@ body {
 	color: #44c74a; 
 	font-size: 1.714em; 
 	margin-bottom: 0.333em;
+	
 	
 	} 
 #featured h3 {
@@ -342,11 +359,12 @@ body {
 	background: #fff; 
 	margin-bottom: 2em; 
 	overflow: hidden; 
-	padding: 20px 20px; 
+	padding: 1.667em 1.667em; 
 	width: 90%; /*760px;*/  
-	border-radius: 10px; 
-	-moz-border-radius: 10px; 
-	-webkit-border-radius: 10px; 
+	border-radius: .833em; 
+	-moz-border-radius: .833em; 
+	-webkit-border-radius: .833em; 
+	
 	}
 	
 	
@@ -369,7 +387,7 @@ body {
 		color: #44c74a; 
 		font-size: 1.850em; /*1.429em;*/ 
 		margin-bottom: .25em; 
-		padding: 0 3px; 
+		padding: 0 .250em; 
 		}  
 	#extras a:link, 
 	#extras a:visited { 
@@ -387,8 +405,8 @@ body {
 		}  
 	#extras .blogroll li {
 		float: left; 
-		margin: 0 15px 0 0; 
-		width: 150px;
+		margin: 0 1.250em 0 0; 
+		width: 11.5em;
 		}  
 
 /* ------------ last <li> ---------------*/ 
@@ -404,14 +422,56 @@ body {
 		border: 0;
 		}
 		
+/* ------------------------------------Table Main -------------------- */
+table{
+	border-collapse: collapse;
+	border: .183em solid #fff;
+	width: 80%;
+}
+
+td {
+	border: .083em solid #fff;
+	text-align: left;
+	color: #fff;
+}
+
+th {
+	 text-align: left;
+	 background-color:#999;
+	 color: #fff;
+}	
+/* -----------------Forms-------------------------*/
+
+form {
+	float: left;
+	padding: 1em;
+	margin-right: 10em;
+	text-align: right;
+	margin-top:auto;
+
 	
-		
+	
+}
+
+h6 {
+	font-size:1.5em;
+	color: #fff;
+	float:left;
+	margin-left: 3em;
+	margin-top:0em;
+}
+
+label{
+	color: #fff;
+	font-size:1.132em;
+}
 		
 /* ------------------ Link ------------------------- */ 
 	.hentry { 
 		
-		border-bottom: 1px solid #eee; 
+		border-bottom: .083em solid #eee; 
 		padding: 1.5em 0; 
+		
 		} 
 	li:last-child .hentry, 
 		#content > .hentry {
@@ -420,6 +480,7 @@ body {
 			} 
 		#content > .hentry {
 			padding: 1em 0;
+			
 			}  
 		.entry-title {
 			font-size: 1.429em; 
@@ -448,13 +509,14 @@ body {
 	#posts-list {
 		list-style: none; 
 		margin: 0;
+		 
 		}
 	#posts-list .hentry {
 		padding-left: 30%; 
 		position: relative;
 		} 
 	#posts-list footer { 
-		left: 10px; 
+		left: .833em; 
 		position: absolute; 
 		top: 1.5em; 
 		width: 23.75%;/*190px;*/ 
@@ -463,7 +525,7 @@ body {
 #posts-list .hentry:hover a:link, 
 #posts-list .hentry:hover a:visited { 
 	color: #F6CF74; 
-	text-shadow: 1px 1px 1px #333; 
+	text-shadow: .083em .083em .083em #333; 
 	}
 	
 /* --------------------- About ---------------------------------- */ 
@@ -473,17 +535,17 @@ body {
 	font-style: normal; 
 	margin-bottom: 2em; 
 	overflow: hidden; 
-	padding: 20px; 
+	padding: 1.667em; 
 	text-align: left; 
 	width: 90%; /*760px;*/  
-	border-radius: 10px; 
-	-moz-border-radius: 10px; 
-	-webkit-border-radius: 10px;
+	border-radius: .833em; 
+	-moz-border-radius: .833em; 
+	-webkit-border-radius: .833em;
 	}  
 	
 #about .primary {
 	float: left; 
-	width: 165px;
+	width: 13.750em;
 	} 
 	
 #about .primary strong {
@@ -493,7 +555,7 @@ body {
 	} 
 #about .photo {
 	float: left; 
-	margin: 5px 20px;
+	margin: .417em 1.667em;
 	}  
 #about .url:link,
 #about .url:visited {
@@ -514,16 +576,50 @@ body {
 
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media screen and (min-width: 768px) and (max-width:767px) {
-		#wrapper {background-color: #ff7743; }
+	@media screen and (min-width: 64.001em) and (max-width:75em) {
+		#wrapper {background-color: #ff7743; 
+				}
+		#main{width: auto;
+				}
 		}
 		
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		#wrapper {background-color: #ff7743; }
+	@media only screen and (min-width: 35.124em) and (max-width: 64em) {
+		#wrapper {background-color: #ff7743; 
+					}
+				#prov1 {display: none;
+					}
+				#ballbox {display: none;
+					}
+				#posts-list .hentry {padding-left: 0%;
+					}
+				
 		}
 		
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-		#wrapper {background-color: #d593ff; }
-	}
+	@media only screen and (max-width: 35.00em) {
+		#wrapper {background-color: #d593ff;
+				  font-size: 75%; 
+				  width: auto;
+				  }
+		section, aside { float: none; 
+					}
+		#main {float: right;
+			   width: auto;
+			   		}
+		#prov1 {display: none;
+					}
+		#ballbox {display: none;
+				  float: none;
+				  	}
+		#content {float: right;
+					}
+		#posts-list .hentry {padding-left: 0%;
+					}
+		
+		#banner nav a:link,
+		#banner nav a:visited { 
+			height: 1.65em;
+			padding: .4em 1.5em; 
+		 	}
+		 	}

@@ -2,10 +2,13 @@
 <html lang="en"> 
 
 	
-		<head> 			
-			
+	<head> 			
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+			<title>Titleist</title>
+			<div id="wrapper">
 		<header id="banner" class="body"> 
-			<h1><a href="#">Titleist, the number one golf ball in the world.<strong></ins></strong></a></h1>  
+			<h1><a href="#">Titleist, the number one golf ball in the world.<strong></strong></a></h1>  
 
 			<nav><ul> 
 			<li class="active"><a href="#">home</a></li> 
@@ -17,37 +20,31 @@
 			
 			</header><!-- /#banner -->
 	
-		<section id="content" class="body">  
+<section id="content" class="body">  
 	
-	<ol id="posts-list" class="hfeed">  
+		<ol id="posts-list" class="hfeed"></ol>
+	 
 	
-	<li><article class="hentry">	 
-	<header> 
-	<h2>
-		Why Choose Titleist?
-	</h2>
-	</header>  
+			
+		<header> 
+		<h2>
+			Why Choose Titleist?
+		</h2>
+		</header>  
 	
-	<footer class="post-info"> 
-	<abbr class="published" title="2012-08-14 T14:07:00-07:00"><!-- 
-	YYYYMMDDThh:mm:ss+ZZZZ --> 
-	14th August 2012 
-	</abbr>  
+		<footer class="post-info"> 
+		<div id=ballbox>
 	
-	<address class="vcard author"> 
-	By Shawn Lawson  
+			<img src="images/boxballs.jpg" alt= "Photo of a box of balls."  >
 	
-	</address> 
-	
-	<img src="images/boxballs.jpg" alt= "Photo of a box of balls.">
-		
+		</div>
 
 	
-	</footer><!-- /.post-info -->  
+		</footer>  
 
-	<div class="entry-content"> 
+		<div id=main>
 			<p>We care about your game and want to earn your trust. 
-			Our passionate team at Titleist, from R&D to Operations 
+			Our passionate team at Titleist, from R&amp;D to Operations 
 			to Marketing to Sales, is filled with men and women golfers 
 			who understand your game. We conduct research with many 
 			golfers to identify their performance needs and preferences. 
@@ -59,27 +56,62 @@
 			the facts about golf ball performance and fitting so you can choose 
 			the best ball for your game. Our goal is for you to have greater 
 			confidence, lower scores and more fun. Players know, when they hit 
-			a pure shot, there’s a perfect sound and feel at impact. </p>  
-	<!-- <div><a href="#" title= "" class="button">Buy Now!</a>  </div> -->
-		<button type="button" onclick="alert url= "" >Buy Now!</button> 
-		
-</div>
-	<!-- 
-	/.entry-content  
-	</article></li>  
+			a pure shot, there is a perfect sound and feel at impact. </p>  
 	
-	<li><article class="hentry"> 
-	... 
-	</article></li> 
+		<button type="button" onclick="alert">Buy Now!</button> 
+		
+		</div>
 	  
 	
-	<li><article class="hentry"> 
-	...
-	</article></li> 
-	</ol> -->
-	<!-- /#posts-list -->  
+</section>
+
+<div>
+	<h6>Join Our Mailing List!</h6>
 	
-	</section>
+	<form method="get" action="mailto:slawson@bartowfirst.com">
+	
+		<div>
+			<label for="name_first">First Name</label>
+			<input type="text" name="name_first" id="name_first"/>
+		</div>
+	
+		<div>
+			<label for="name_last">Last Name</label>
+			<input type="text" name="name_last" id="name_last"/>
+		</div>
+		
+		<div>
+			<label for="phone">Phone Number</label>
+			<input type="text" name="phone" id="phone"/>
+		</div>
+	
+		<div>
+			<label for="email">Email Address</label>
+			<input type="text" name="email" id="email"/>
+		</div>
+		
+		<div>
+			<label for="how" id="reference"></label>
+		</div>
+	
+		<div>
+		
+			<select name="reference" id="how">
+				<option>Television Ad</option>
+				<option>Newspaper</option>
+				<option>Internet</option>
+				<option>Other</option>
+			</select>
+		</div>
+			
+		<div>
+			<button type="submit" name="submit" class="button">Submit</button>		
+		</div>
+	
+	</form>
+	</div>
+
+
 	<!-- /#content --> 
 	
 	
@@ -93,19 +125,16 @@
 	<li><a href="#" rel="external">Titleist Golf School</a></li> 
 	<li><a href="#" rel="external">Titleist Golf Pros</a></li>  
 	<li><a href="#" rel="external">Titleist Golf Clubs</a></li> 
-	<li><a href="#" rel="external">Titleist Apparel</a></li> 
-	<li><a href="#" rel="external">Titleist Community</a></li>  
-	<li><a href="#" rel="external"></a></li> 
-	<li><a href="#" rel="external"></a></li> 
-	<li><a href="#" rel="external"></a></li>
-	 
-	 
-	 
 	
-
+	 
 	
 	</ul> 
 	</div>
+	
+	<!-- /form -->
+	
+	
+	
 <!-- /.blogroll -->  
 	
 	<!--<div class="social"> 
@@ -121,19 +150,18 @@
 
 <!-- /image gallery -->
 	 
-<ul id="gallery">
+	<ul id="gallery">
 		
-
-		<img src="images/golfballtee.jpg" width="150" height="125" alt="Photo of a golf 
-		ball on a golf tee." ></li>
-		<img src="images/golfballingrass.jpg" width="150" height="125" alt="Photo of a golf
+		<li><img src="images/golfballtee.jpg" width="150" height="125" alt="Photo of a golf 
+		ball on a golf tee."></li>
+		<li><img src="images/golfballingrass.jpg" width="150" height="125" alt="Photo of a golf
 		ball in the grass." ></li>
-		<img src="images/lotsofballs.jpg" width="150" height="125" alt="Photo of a bunch of
+		<li><img src="images/lotsofballs.jpg" width="150" height="125" alt="Photo of a bunch of
 		balls on a putting green." ></li>
-		<img src="images/bgimage.jpg" width="150" height="125" alt="Photo of a golf course
+		<li><img src="images/bgimage.jpg" width="150" height="125" alt="Photo of a golf course
 		fairway." ></li>
 	
-            </ul>	
+        </ul>	
 	
 <!--/end of gallery -->
 
@@ -148,14 +176,14 @@
 	
 		<aside id="featured" class="body"><article> 
 		<figure> 
-		<div id="prov1"><img src="images/prov1.jpg" alt="Titleist" width: 100%; /></div>
+		<div id="prov1"><img src="images/prov1.jpg" alt="Titleist" /></div>
 		</figure> 
 		<hgroup>  
 		
 		<h2>Featured Product</h2> 
 		<h3><a href="#">NXT Tour Golf Ball</a></h3> 
 		</hgroup> 
-		<p>You are driven to be the best player you can be.</em> Engineered for high
+		<p>You are driven to be the best player you can be. Engineered for high
 		performance, the new NXT Tour and NXT Tour S golf balls will help you 
 		reach your potential. <span>Both NXT and NXT Tour S deliver low driver and
 		long iron spin for <strong>outstanding distance</strong> and also offer excellent short game
@@ -169,7 +197,7 @@
 			and part of a national Championship team at Oklahoma state, and 
 			competed in numerous major championships. And Tim has the same focus 
 			and desire to succeed in his many other roles as a PGA Professional. 
-			he’s relentless when it comes to finding ways to explain a teaching 
+			he is relentless when it comes to finding ways to explain a teaching 
 			technique so it clicks with the player, or working to enhance the 
 			experience at the club to encourage more play from the membership. 
 			At titleist, we celebrate the thousands of PGA Professionals like Tim, 
@@ -177,7 +205,7 @@
 			make a meaningful impact on their students, members and the game overall. 
 			Visit titleist.com/bestpractices to learn more about Tim and how he leads 
 			by example.</p>  
-		</article>
+		</article></aside>
 		
 	</aside><!-- /#featured -->
 	
@@ -194,7 +222,7 @@
 	<img src="images/prov1.jpg" alt="Titleist Logo" 
 	class="photo" /></aside> -->
 	
-	<!--------- anchor to about nav ---------->
+	<!--anchor to about nav -->
 	
 	<a name="sample"></a> 
  
@@ -202,21 +230,53 @@
 			score simply by using the Titleist NXT golf ball! Nancy Kenn from Orlando
 			says "it's the best ball I've ever used!".</span>  
 	
-	</address><!-- /#about --> 
+	</address><!-- /#about -->
+<h4>Longest Drive Results</h4>	
+<div id="longdrive">
+<table>
+ 	<tr>
+ 		<th>Name</th>
+ 		<th>Age</th>
+ 		<th>Distance(Yards)</th>
+ 		<th>Ball</th>
+ 	</tr>
+ 	<tr>
+ 		<td>Joe Daddy</td>
+ 		<td>35</td>
+ 		<td>334</td>
+ 		<td>ProV1</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Larry Smith</td>
+ 		<td>37</td>
+ 		<td>387</td>
+ 		<td>ProV1x</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Kevin Long</td>
+ 		<td>34</td>
+ 		<td>402</td>
+ 		<td>NXT Tour</td>
+ 	</tr>
+		
+ </table>
+	
+</div>
+	
+	 
 	<p>2005-2009 <a href="http://titleist.com">Titleist Golf Company</a>.
 	</p> 
 	</footer><!-- /#contentinfo -->
 
-
-<meta charset="utf-8" /> 
-<title>Titleist!</title>  
+	 
 
 <link rel="stylesheet" href="css/main.css" type="text/css" />  
 
  
 
-</head>  
-<body id="index" class="home"> 
+  
+</div><!--end wrapper-->
+
 </body>
 
 </html>
